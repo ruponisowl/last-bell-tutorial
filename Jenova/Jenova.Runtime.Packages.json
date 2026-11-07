@@ -1,0 +1,44 @@
+{
+  "packages": [
+    {
+      "pkgDestination": "res://Jenova/Packages/JenovaLLVMCompiler-19.1.7",
+      "pkgHash": "6139e26d9050c8e85ad6718f01cdf5de",
+      "pkgInstallScript": false,
+      "pkgName": "LLVM Clang Toolchain (Microsoft Edition)",
+      "pkgPlatform": 0,
+      "pkgType": 0,
+      "pkgUninstallScript": false,
+      "pkgVersion": "19.1.7 (x64)"
+    },
+    {
+      "pkgDestination": "res://Jenova/Packages/JenovaMinGWCompiler-14.2.0-LLVM",
+      "pkgHash": "580a5e62920536c947af6c3b1f9409f9",
+      "pkgInstallScript": false,
+      "pkgName": "Minimalist GNU for Windows Toolchain (With LLVM)",
+      "pkgPlatform": 0,
+      "pkgType": 0,
+      "pkgUninstallScript": false,
+      "pkgVersion": "14.2.0 (x64)"
+    },
+    {
+      "pkgDestination": "res://Jenova/Packages/GodotSDK-4.7.0",
+      "pkgHash": "e178d5d786a92ca04e80feaba4905b9e",
+      "pkgInstallScript": false,
+      "pkgName": "Godot SDK 4.7.0 R2 (GCC/LLVM)",
+      "pkgPlatform": 1,
+      "pkgType": 1,
+      "pkgUninstallScript": false,
+      "pkgVersion": "4.7.0 (x64)"
+    },
+    {
+      "pkgDestination": "res://Jenova/Packages/GodotSDK-4.7.0",
+      "pkgHash": "c732dd58d8f83e59f03f1b5444279172",
+      "pkgInstallScript": false,
+      "pkgName": "Godot SDK 4.7.0 R2 (MSVC)",
+      "pkgPlatform": 0,
+      "pkgType": 1,
+      "pkgUninstallScript": false,
+      "pkgVersion": "4.7.0 (x64)"
+    }
+  ]
+}
