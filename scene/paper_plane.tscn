@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bpgi6j33hi5uh"]
+
+[ext_resource type="Texture2D" uid="uid://bncfrrd51lhqo" path="res://sprites/paper_plane.png" id="1_tkvjs"]
+[ext_resource type="Script" uid="uid://begt2rgkfe2lb" path="res://scripts/paper_plane.gd" id="1_vttfr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hx4j5"]
+size = Vector2(13, 9)
+
+[node name="PaperPlane" type="Area2D" unique_id=2007717630 groups=["plane"]]
+collision_layer = 8
+collision_mask = 4
+script = ExtResource("1_vttfr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1453828204]
+texture = ExtResource("1_tkvjs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=827031018]
+shape = SubResource("RectangleShape2D_hx4j5")

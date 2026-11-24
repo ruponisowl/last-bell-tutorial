@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://65v2k5ijuaul"]
+
+[ext_resource type="AudioStream" uid="uid://dmxu7mgudjw5u" path="res://sounds/02. Start a Cult.mp3" id="1_hyfhj"]
+
+[node name="bmusic" type="AudioStreamPlayer" unique_id=187160233]
+stream = ExtResource("1_hyfhj")
+volume_db = -17.333
+autoplay = true
+bus = &"bmusic"

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c6uxlia8pulm0"]
+
+[ext_resource type="Texture2D" uid="uid://dqx1q2tldu8xg" path="res://sprites/shaft_beam.png" id="1_decs0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hx4j5"]
+size = Vector2(48, 12)
+
+[node name="Beam" type="StaticBody2D" unique_id=1236531325]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=162601975]
+texture = ExtResource("1_decs0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1337268723]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_hx4j5")
+one_way_collision = true

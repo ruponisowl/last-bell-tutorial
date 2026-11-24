@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cg1yaic8jpe6p"]
+
+[ext_resource type="Script" uid="uid://bv85j2xbob61p" path="res://scripts/classroom_door.cpp" id="1_vbg5u"]
+[ext_resource type="Texture2D" uid="uid://5qn767277yqs" path="res://sprites/classroom_door.png" id="1_wo02r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hx4j5"]
+size = Vector2(70, 90)
+
+[node name="ClassroomDoor" type="Area2D" unique_id=804984523]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_vbg5u")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1517794010]
+texture = ExtResource("1_wo02r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1192812903]
+shape = SubResource("RectangleShape2D_hx4j5")

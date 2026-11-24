@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://46tv2u3yhqgb"]
+
+[ext_resource type="Texture2D" uid="uid://bv5cf5dspr6pm" path="res://sprites/uni_bus.png" id="1_l2fm7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hx4j5"]
+size = Vector2(135, 18)
+
+[node name="Bus" type="StaticBody2D" unique_id=53686460]
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=215017051]
+texture = ExtResource("1_l2fm7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=606536493]
+position = Vector2(0, -11)
+shape = SubResource("RectangleShape2D_hx4j5")

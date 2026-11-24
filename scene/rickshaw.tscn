@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://iunwxgf7r86x"]
+
+[ext_resource type="Texture2D" uid="uid://xfme0w7hha8b" path="res://sprites/auto.png" id="1_tivai"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hx4j5"]
+size = Vector2(25, 6)
+
+[node name="Rickshaw" type="StaticBody2D" unique_id=843704652]
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1634711519]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_tivai")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=569884740]
+position = Vector2(2, -5)
+shape = SubResource("RectangleShape2D_hx4j5")
