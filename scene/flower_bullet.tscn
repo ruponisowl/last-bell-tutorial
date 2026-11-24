@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://chityf5avvd2f"]
+
+[ext_resource type="Script" uid="uid://brq104d6rh10a" path="res://scripts/flower_bullet.gd" id="1_jxef7"]
+[ext_resource type="Texture2D" uid="uid://c8t82xqhcmyl" path="res://sprites/flower_bullet (1).png" id="2_jxef7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hx4j5"]
+radius = 4.1231055
+
+[node name="FlowerBullet" type="Area2D" unique_id=2118359609]
+collision_mask = 2
+script = ExtResource("1_jxef7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=80806659]
+texture = ExtResource("2_jxef7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1190109636]
+shape = SubResource("CircleShape2D_hx4j5")

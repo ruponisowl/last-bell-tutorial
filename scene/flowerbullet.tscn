@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://i8n3qsvrhh3o"]
+
+[ext_resource type="Texture2D" uid="uid://575berlnx2ah" path="res://sprites/flower_bullet.png" id="1_t02nb"]
+
+[node name="flowerbullet" type="Node2D" unique_id=409753185]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=442498518]
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=2079009343]
+texture = ExtResource("1_t02nb")
