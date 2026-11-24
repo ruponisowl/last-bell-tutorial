@@ -193,11 +193,12 @@ void OnProcess(Caller* instance, double delta)
 		if (!self->has_overlapping_bodies()) return;
 
 		lines.clear();
-		lines.enqueue("GUARD:  Oi! Where do you think you're going?");
-		lines.enqueue("GUARD:  No ID card, no entry. Rules are rules.");
-		lines.enqueue("YOU:    I don't have my ID card.");
-		lines.enqueue("YOU:    Class starts in five minutes!");
-		lines.enqueue("GUARD:  Then you had better get past me.");
+		lines.enqueue("GUARD:  Oi! Koi jao? Darao!");
+		lines.enqueue("GUARD:  ID card nai?");
+		lines.enqueue("YOU:    Mama, ID card bashay fele aisi.");
+		lines.enqueue("GUARD:  Tahole vitore dhukte parba na.");
+		lines.enqueue("YOU:    Amar kase gun ase. Jete na dile uray dibo.");
+		lines.enqueue("GUARD:  Tui ki urabi? Ami nijei urbo!");
 
 		state = STATE_TALKING;
 
@@ -227,6 +228,16 @@ void OnProcess(Caller* instance, double delta)
 			state = STATE_FIGHTING;
 			fireTimer  = 0.6;
 			perchTimer = PERCH_TIME;
+			
+			// open the fight from the aerial spot
+			if (spotCount > RAIN_SPOT)
+			{
+				jumpFrom  = self->get_global_position();
+				spotIndex = RAIN_SPOT;
+				jumpTo    = spots[RAIN_SPOT];
+				jumpT     = 0.0;
+				swayTime  = 0.0;
+			}
 			if (box != nullptr) box->call("hide_box");
 			Output("[GUARD] dialogue queue empty -- fight begins");
 						Node* mood = scene->find_child("Mood", true, false);
@@ -262,6 +273,16 @@ void OnProcess(Caller* instance, double delta)
 			state      = STATE_FIGHTING;
 			fireTimer  = 0.6;
 			perchTimer = PERCH_TIME;
+			
+			// open the fight from the aerial spot
+			if (spotCount > RAIN_SPOT)
+			{
+				jumpFrom  = self->get_global_position();
+				spotIndex = RAIN_SPOT;
+				jumpTo    = spots[RAIN_SPOT];
+				jumpT     = 0.0;
+				swayTime  = 0.0;
+			}
 			Node* moodOn = scene->find_child("Mood", true, false);
 			if (moodOn != nullptr) moodOn->call("set_boss", true);
 						Node* barOn = scene->find_child("BossBar", true, false);
