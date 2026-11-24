@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bs77bg32orfy"]
+
+[ext_resource type="Texture2D" uid="uid://ifem82gf6yfa" path="res://sprites/knight.png" id="1_hxjr3"]
+[ext_resource type="Script" uid="uid://geb7bnpqxhqy" path="res://scripts/guard.cpp" id="1_x1kce"]
+[ext_resource type="PackedScene" uid="uid://cujbab6ivowj4" path="res://scene/guard_shot.tscn" id="3_weq8v"]
+[ext_resource type="AudioStream" uid="uid://xp67xyrfd35r" path="res://sounds/hurt.wav" id="4_2he53"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hx4j5"]
+size = Vector2(38, 23)
+
+[node name="Guard" type="Area2D" unique_id=1406068518]
+collision_layer = 4
+collision_mask = 10
+script = ExtResource("1_x1kce")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=755510497]
+texture = ExtResource("1_hxjr3")
+offset = Vector2(0, -16)
+region_enabled = true
+region_rect = Rect2(0, 0, 30, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=526764476]
+position = Vector2(-12, -11.5)
+shape = SubResource("RectangleShape2D_hx4j5")
+
+[node name="Shots" type="Node2D" parent="." unique_id=364818339]
+
+[node name="GuardShot" parent="Shots" unique_id=37773793 instance=ExtResource("3_weq8v")]
+
+[node name="GuardShot2" parent="Shots" unique_id=1014806046 instance=ExtResource("3_weq8v")]
+
+[node name="GuardShot3" parent="Shots" unique_id=75266318 instance=ExtResource("3_weq8v")]
+
+[node name="GuardShot4" parent="Shots" unique_id=1509011789 instance=ExtResource("3_weq8v")]
+
+[node name="GuardShot5" parent="Shots" unique_id=1378614807 instance=ExtResource("3_weq8v")]
+
+[node name="GuardShot6" parent="Shots" unique_id=225220971 instance=ExtResource("3_weq8v")]
+
+[node name="GuardShot7" parent="Shots" unique_id=831685287 instance=ExtResource("3_weq8v")]
+
+[node name="GuardShot8" parent="Shots" unique_id=883779524 instance=ExtResource("3_weq8v")]
+
+[node name="Hit" type="AudioStreamPlayer" parent="." unique_id=758324382]
+stream = ExtResource("4_2he53")
+volume_db = -13.594

@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cujbab6ivowj4"]
+
+[ext_resource type="Texture2D" uid="uid://chlqs2h1nmxak" path="res://sprites/id_card.png" id="1_ua1bx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hx4j5"]
+size = Vector2(10, 4)
+
+[node name="GuardShot" type="Area2D" unique_id=37773793]
+collision_layer = 0
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1957324267]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ua1bx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1846554949]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_hx4j5")
