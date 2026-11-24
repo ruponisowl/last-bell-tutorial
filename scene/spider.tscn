@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://btff1363tuq6j"]
+
+[ext_resource type="Texture2D" uid="uid://c2h7dxvmd1d4y" path="res://sprites/spider.png" id="1_lfhnh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hx4j5"]
+size = Vector2(6, 8.5)
+
+[node name="Spider" type="Area2D" unique_id=2011599673]
+collision_layer = 0
+collision_mask = 2
+
+[node name="Thread" type="Line2D" parent="." unique_id=1543065072]
+points = PackedVector2Array(0, 0, 0, -50)
+width = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=583733377]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_lfhnh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1923213191]
+position = Vector2(0, 0.25)
+shape = SubResource("RectangleShape2D_hx4j5")
