@@ -456,7 +456,7 @@ size = Vector2(43.59375, 120)
 [node name="game" type="Node2D" unique_id=509416753]
 
 [node name="payer" parent="." unique_id=590921981 groups=["player"] instance=ExtResource("1_5kiuu")]
-position = Vector2(-17, -1)
+position = Vector2(-14, -1)
 max_health = 4
 
 [node name="Camera2D" type="Camera2D" parent="payer" unique_id=1652503155]
@@ -563,9 +563,6 @@ position = Vector2(1218, -30)
 [node name="coin2" parent="." unique_id=1094117589 instance=ExtResource("5_p1ry8")]
 position = Vector2(6494, -999)
 
-[node name="coin16" parent="." unique_id=1613177276 instance=ExtResource("5_p1ry8")]
-position = Vector2(3670, -66)
-
 [node name="coin3" parent="." unique_id=1184159067 instance=ExtResource("5_p1ry8")]
 position = Vector2(6797, -1162)
 
@@ -617,17 +614,11 @@ position = Vector2(7353, -1359)
 [node name="coin14" parent="." unique_id=1292947570 instance=ExtResource("5_p1ry8")]
 position = Vector2(7430, -1355)
 
-[node name="coin15" parent="." unique_id=1211884804 instance=ExtResource("5_p1ry8")]
-position = Vector2(7601, -1338)
-
 [node name="coin21" parent="." unique_id=562729309 instance=ExtResource("5_p1ry8")]
 position = Vector2(6230, -835)
 
 [node name="coin17" parent="." unique_id=989632806 instance=ExtResource("5_p1ry8")]
-position = Vector2(7408, -1382)
-
-[node name="coin18" parent="." unique_id=1657281444 instance=ExtResource("5_p1ry8")]
-position = Vector2(7374, -1382)
+position = Vector2(7389, -1381)
 
 [node name="coin6" parent="." unique_id=642097194 instance=ExtResource("5_p1ry8")]
 position = Vector2(6669, -1145)
@@ -721,9 +712,6 @@ position = Vector2(1418, -172)
 [node name="coin" parent="platfrom 4" unique_id=367679425 instance=ExtResource("5_p1ry8")]
 position = Vector2(-1, -12)
 
-[node name="coin3" parent="platfrom 4" unique_id=1022110307 instance=ExtResource("5_p1ry8")]
-position = Vector2(2068, 149)
-
 [node name="coin25" parent="platfrom 4" unique_id=2027660737 instance=ExtResource("5_p1ry8")]
 position = Vector2(2242, 37)
 
@@ -754,17 +742,11 @@ position = Vector2(3091, 85)
 [node name="coin20" parent="platfrom 4" unique_id=283477065 instance=ExtResource("5_p1ry8")]
 position = Vector2(3475, 131)
 
-[node name="coin21" parent="platfrom 4" unique_id=1567929763 instance=ExtResource("5_p1ry8")]
-position = Vector2(3291, 40)
-
 [node name="coin22" parent="platfrom 4" unique_id=136535301 instance=ExtResource("5_p1ry8")]
 position = Vector2(3252, 69)
 
 [node name="coin8" parent="platfrom 4" unique_id=1361384268 instance=ExtResource("5_p1ry8")]
 position = Vector2(3634, 114)
-
-[node name="coin9" parent="platfrom 4" unique_id=813865444 instance=ExtResource("5_p1ry8")]
-position = Vector2(1434, 140)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="platfrom 4" unique_id=808144027]
 libraries/ = SubResource("AnimationLibrary_xlg7c")
@@ -1188,7 +1170,7 @@ offset_bottom = -54.0
 theme_override_fonts/font = ExtResource("4_xwcet")
 theme_override_font_sizes/font_size = 8
 text = "press \"F / X\" to attack 
-    with Paper Plane"
+    with 9mm glock!"
 
 [node name="tuto 6txt4" type="Label" parent="." unique_id=634453909]
 offset_left = 2053.0
@@ -1501,7 +1483,7 @@ position = Vector2(7462, -1351)
 position = Vector2(7269, -1350)
 
 [node name="Bird4" parent="." unique_id=1049343556 instance=ExtResource("38_0pyxt")]
-position = Vector2(7388, -1368)
+position = Vector2(7390, -1398)
 
 [node name="Bird5" parent="." unique_id=256025141 instance=ExtResource("38_0pyxt")]
 position = Vector2(7223, -1369)
@@ -1525,6 +1507,33 @@ position = Vector2(6533, -156)
 
 [node name="Fruit27" parent="." unique_id=1198738839 instance=ExtResource("21_1it6f")]
 position = Vector2(6550, -167)
+
+[node name="Fruit29" parent="." unique_id=649552841 instance=ExtResource("21_1it6f")]
+position = Vector2(6428, -1063)
+
+[node name="Fruit30" parent="." unique_id=468978984 instance=ExtResource("21_1it6f")]
+position = Vector2(6095, -665)
+
+[node name="Fruit31" parent="." unique_id=645766584 instance=ExtResource("21_1it6f")]
+position = Vector2(6049, -923)
+
+[node name="Fruit32" parent="." unique_id=605356431 instance=ExtResource("21_1it6f")]
+position = Vector2(7075, -935)
+
+[node name="Fruit33" parent="." unique_id=92348964 instance=ExtResource("21_1it6f")]
+position = Vector2(5833, -246)
+
+[node name="Fruit37" parent="." unique_id=36333233 instance=ExtResource("21_1it6f")]
+position = Vector2(5560, -22)
+
+[node name="Fruit34" parent="." unique_id=1658617292 instance=ExtResource("21_1it6f")]
+position = Vector2(4628, -85)
+
+[node name="Fruit35" parent="." unique_id=1695431836 instance=ExtResource("21_1it6f")]
+position = Vector2(6414, -982)
+
+[node name="Fruit36" parent="." unique_id=2020176456 instance=ExtResource("21_1it6f")]
+position = Vector2(6572, -995)
 
 [node name="Fruit28" parent="." unique_id=1304356195 instance=ExtResource("21_1it6f")]
 position = Vector2(6533, -184)
@@ -1587,20 +1596,18 @@ script = ExtResource("54_6lyqh")
 
 [node name="busname" type="Label" parent="." unique_id=867492039]
 offset_left = 3640.0
-offset_top = -36.0
-offset_right = 3652.0
-offset_bottom = -24.0
+offset_top = -37.0
+offset_right = 3679.0
+offset_bottom = -30.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_xwcet")
 theme_override_font_sizes/font_size = 4
 text = "Varendra University"
 
 [node name="busname2" type="Label" parent="." unique_id=763742845]
 offset_left = 4024.0
-offset_top = -35.0
+offset_top = -36.0
 offset_right = 4087.0
-offset_bottom = -23.0
+offset_bottom = -24.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_xwcet")
 theme_override_font_sizes/font_size = 4
 text = "Varendra University"
