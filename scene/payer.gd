@@ -39,6 +39,8 @@ func _physics_process(delta: float) -> void:
 	if direction != 0.0:
 		velocity.x = direction * speed
 		anim.flip_h = direction < 0.0
+		$Gun.flip_h = direction < 0.0
+		$Gun.position.x = -7.0 if direction < 0.0 else 7.0
 		play_once("run")
 	else:
 		velocity.x = move_toward(velocity.x, 0.0, speed)
@@ -121,6 +123,11 @@ func _throw() -> void:
 
 	if p.has_node("Sprite2D"):
 		p.get_node("Sprite2D").flip_h = facing < 0.0
+	var flash := $Gun/Flash
+	flash.visible = true
+	await get_tree().create_timer(0.05).timeout
+	if is_instance_valid(flash):
+		flash.visible = false
 func respawn() -> void:
 	var target: Vector2 = safe_prev
 	if target == Vector2.ZERO:
