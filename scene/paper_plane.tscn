@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dsih2nn3ge475" path="res://sprites/bullet.png" id="2_vttfr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hx4j5"]
-size = Vector2(13, 6)
+size = Vector2(13, 10)
 
 [node name="PaperPlane" type="Area2D" unique_id=2007717630 groups=["plane"]]
 collision_layer = 8

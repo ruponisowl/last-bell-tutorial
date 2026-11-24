@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://buebhw88hkwav" path="res://sprites/run 1.0.png" id="3_cxqv5"]
 [ext_resource type="Texture2D" uid="uid://dmv2cnxeiusal" path="res://sprites/glock.png" id="4_o7mdu"]
 [ext_resource type="Texture2D" uid="uid://jmh8dadckf2x" path="res://sprites/muzzle_flash.png" id="5_d1a4r"]
+[ext_resource type="AudioStream" uid="uid://d3tylh4lchym" path="res://sounds/gunshot.wav" id="6_d1a4r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_slbi4"]
 atlas = ExtResource("1_ryu2j")
@@ -115,3 +116,7 @@ texture = ExtResource("4_o7mdu")
 visible = false
 position = Vector2(16.666666, -3.3333333)
 texture = ExtResource("5_d1a4r")
+
+[node name="Shot" type="AudioStreamPlayer" parent="." unique_id=1323909669]
+stream = ExtResource("6_d1a4r")
+volume_db = -17.333

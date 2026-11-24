@@ -23,7 +23,7 @@ func _ready() -> void:
 	print("Player health: ", health)
 	safe_last = global_position
 	safe_prev = global_position
-
+	$Gun.visible = false
 func _physics_process(delta: float) -> void:
 	# --- gravity ------------------------------------------------------
 	if not is_on_floor():
@@ -46,6 +46,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0.0, speed)
 		play_once("idle")
 	throw_timer -= delta
+	$Gun.visible = Input.is_action_pressed("throw")
 	if Input.is_action_just_pressed("throw") and throw_timer <= 0.0:
 		_throw()
 	move_and_slide()
@@ -109,7 +110,8 @@ func die() -> void:
 		get_tree().reload_current_scene()
 func _throw() -> void:
 	throw_timer = throw_cooldown
-
+	if has_node("Shot"):
+		$Shot.play()
 	var facing := -1.0 if anim.flip_h else 1.0
 
 	var p := PAPER_PLANE.instantiate()
